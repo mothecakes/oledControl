@@ -1,0 +1,4 @@
+../Core/Src/render.c:11:6:displayHealth	1
+../Core/Src/render.c:16:6:displayHunger	1
+../Core/Src/render.c:21:6:displayHappiness	1
+../Core/Src/render.c:26:6:render_init	1

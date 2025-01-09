@@ -1,0 +1,4 @@
+../Core/Src/game.c:10:6:hurt	16	static
+../Core/Src/game.c:19:6:play	16	static
+../Core/Src/game.c:28:6:eat	16	static
+../Core/Src/game.c:36:6:game_init	24	static

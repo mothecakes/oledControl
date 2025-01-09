@@ -25,7 +25,8 @@
 #include "ssd1306_fonts.h"
 
 #include "sprites.h"
-
+#include "render.h"
+#include "game.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,12 +100,18 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   ssd1306_Init();
+
+  game Game;
+  game_init(&Game, 60, 60, 60);
+
+  render Render;
+  render_init(&Render);
+
       int* current;
       int state1;
       int state2;
       int state3;
       int state4;
-
 
   /* USER CODE END 2 */
 
@@ -121,43 +128,24 @@ int main(void)
       state3 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);
       state4 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9);
 
-      ssd1306_SetCursor(5, 5);
 
-      if (state1 || state2 || state3 || state4) {
-          if (state1) {
-              current = &state1;
-          }
-          else if (state2) {
-              current = &state2;
-          }
-          else if (state3) {
-              current = &state3;
-          }
-          else if (state4) {
-              current = &state4;
-          }
+      if (state3) {
+    	  Game.hurt(&Game ,10);
       }
-
+      if (state2) {
+    	  Game.eat(&Game ,10);
+      }
+      if (state1) {
+    	  Game.play(&Game, 10);
+      }
       ssd1306_Fill(Black);
-	  if (current == &state1) {
-		  ssd1306_WriteChar('1', Font_7x10, Black);
-		  ssd1306_DrawBitmap(0,0, epd_bitmap_spriteCute, 128, 64, White);
-	  }
-	  else if (current == &state2) {
-		  ssd1306_WriteChar('2', Font_7x10, Black);
-		  ssd1306_DrawBitmap(0,0, epd_bitmap_spriteHappy, 128, 64, White);
-	  }
-	  else if (current == &state3) {
-		  ssd1306_WriteChar('3', Font_7x10, Black);
-		  ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, 128, 64, White);
-	  }
-	  else if (current == &state4) {
-		  ssd1306_WriteChar('4', Font_7x10, Black);
-		  ssd1306_DrawBitmap(0,0, epd_bitmap_spriteUnhappy, 128, 64, White);
-	  }
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      Render.displayHappiness(&Game);
+      Render.displayHunger(&Game);
+      Render.displayHealth(&Game);
 
       ssd1306_UpdateScreen();
-      HAL_Delay(10);
+      HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }

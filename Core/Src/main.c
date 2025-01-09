@@ -113,26 +113,30 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-      int state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);
+      int state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
       int state2 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_6);
+      int state3 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);
+      int state4 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9);
 
       ssd1306_SetCursor(5, 5);
 
       ssd1306_Fill(Black);
-      if (state1 || state2) {
-          if (state1 && state2) {
-              ssd1306_WriteString(bothMessage, Font_7x10, White);
-          }
-          else if (state1) {
-              ssd1306_DrawBitmap(0,0, sprite1, 128, 64, White);
-          }
-          else if (state2) {
-              ssd1306_DrawBitmap(0,0, sprite2, 128, 64, White);
-          }
-      }
-      else {
-          ssd1306_WriteString(noneMessage, Font_7x10, White);
-      }
+	  ssd1306_DrawBitmap(0,0, sprite1, 128, 64, White);
+	  if (state1) {
+		  ssd1306_WriteChar('1', Font_7x10, Black);
+	  }
+	  else if (state2) {
+		  ssd1306_WriteChar('2', Font_7x10, Black);
+	  }
+	  else if (state3) {
+		  ssd1306_WriteChar('3', Font_7x10, Black);
+	  }
+	  else if (state4) {
+		  ssd1306_WriteChar('4', Font_7x10, Black);
+	  }
+	  else {
+		  ssd1306_WriteString("No buttons pressed", Font_7x10, White);
+	  }
 
       ssd1306_UpdateScreen();
       HAL_Delay(10);
@@ -286,8 +290,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PC6 Button_Pin */
-  GPIO_InitStruct.Pin = GPIO_PIN_6|Button_Pin;
+  /*Configure GPIO pins : PC5 PC6 Button_Pin PC9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_6|Button_Pin|GPIO_PIN_9;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);

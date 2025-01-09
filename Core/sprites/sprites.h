@@ -11,7 +11,11 @@
 
 
 
-extern const unsigned char sprite1[SSD1306_WIDTH * SSD1306_HEIGHT];
-extern const unsigned char sprite2[SSD1306_WIDTH * SSD1306_HEIGHT];
+extern const unsigned char epd_bitmap_spriteCute   [SSD1306_WIDTH * SSD1306_HEIGHT];
+extern const unsigned char epd_bitmap_spriteHappy  [SSD1306_WIDTH * SSD1306_HEIGHT];
+extern const unsigned char epd_bitmap_spriteSerious[SSD1306_WIDTH * SSD1306_HEIGHT];
+extern const unsigned char epd_bitmap_spriteUnhappy[SSD1306_WIDTH * SSD1306_HEIGHT];
+
+extern const unsigned char* epd_bitmap_allArray[4];
 
 #endif /* SPRITES_SPRITES_H_ */

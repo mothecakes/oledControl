@@ -99,9 +99,12 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   ssd1306_Init();
+      int* current;
+      int state1;
+      int state2;
+      int state3;
+      int state4;
 
-  char bothMessage[] = "Both buttons pressed";
-  char noneMessage[] = "No buttons pressed";
 
   /* USER CODE END 2 */
 
@@ -113,29 +116,44 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-      int state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
-      int state2 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_6);
-      int state3 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);
-      int state4 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9);
+      state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
+      state2 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_6);
+      state3 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);
+      state4 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9);
 
       ssd1306_SetCursor(5, 5);
 
+      if (state1 || state2 || state3 || state4) {
+          if (state1) {
+              current = &state1;
+          }
+          else if (state2) {
+              current = &state2;
+          }
+          else if (state3) {
+              current = &state3;
+          }
+          else if (state4) {
+              current = &state4;
+          }
+      }
+
       ssd1306_Fill(Black);
-	  ssd1306_DrawBitmap(0,0, sprite1, 128, 64, White);
-	  if (state1) {
+	  if (current == &state1) {
 		  ssd1306_WriteChar('1', Font_7x10, Black);
+		  ssd1306_DrawBitmap(0,0, epd_bitmap_spriteCute, 128, 64, White);
 	  }
-	  else if (state2) {
+	  else if (current == &state2) {
 		  ssd1306_WriteChar('2', Font_7x10, Black);
+		  ssd1306_DrawBitmap(0,0, epd_bitmap_spriteHappy, 128, 64, White);
 	  }
-	  else if (state3) {
+	  else if (current == &state3) {
 		  ssd1306_WriteChar('3', Font_7x10, Black);
+		  ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, 128, 64, White);
 	  }
-	  else if (state4) {
+	  else if (current == &state4) {
 		  ssd1306_WriteChar('4', Font_7x10, Black);
-	  }
-	  else {
-		  ssd1306_WriteString("No buttons pressed", Font_7x10, White);
+		  ssd1306_DrawBitmap(0,0, epd_bitmap_spriteUnhappy, 128, 64, White);
 	  }
 
       ssd1306_UpdateScreen();

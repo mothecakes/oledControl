@@ -1,0 +1,8 @@
+.settings/
+.cproject
+.mxproject
+.prject
+.launch
+oledControl Debug.launch
+Core/Inc/
+Core/Startup/

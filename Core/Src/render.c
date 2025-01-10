@@ -51,6 +51,11 @@ void displayScreen(game* game){
     ssd1306_UpdateScreen();
 }
 
+void writeText(void* subject, char* val) {
+	ssd1306_setCursor(32, 5);
+	ssd1306_WriteString(val, Font_6x8, Black);
+}
+
 
 void render_init(render* render) {
     ssd1306_Init();
@@ -59,4 +64,5 @@ void render_init(render* render) {
 	render->displayHappiness = displayHappiness;
 	render->displaySprite = displaySprite;
 	render->displayScreen = displayScreen;
+	render->writeText = writeText;
 }

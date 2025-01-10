@@ -19,6 +19,8 @@ typedef struct {
 	void (*displaySprite)(game* game);
 	void (*displayScreen)(game* game);
 
+	void (*writeText)(game* game);
+
 } render;
 
 void render_init(render* render);

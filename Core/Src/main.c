@@ -99,10 +99,8 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  ssd1306_Init();
-
   game Game;
-  game_init(&Game, 60, 60, 60);
+  game_init(&Game, 60,60,60);
 
   render Render;
   render_init(&Render);
@@ -133,10 +131,10 @@ int main(void)
     	  Game.play(&Game, 10);
       }
       if (state2) {
-    	  Game.eat(&Game ,10);
+    	  Game.eat(&Game,  10);
       }
       if (state3) {
-    	  Game.hurt(&Game ,10);
+    	  Game.hurt(&Game, 10);
       }
 
       Render.displayScreen(&Game);

@@ -12,8 +12,8 @@ typedef int Mood;
 
 #define MOOD_SERIOUS 0
 #define MOOD_UNHAPPY 1
-#define MOOD_HAPPY 2
-#define MOOD_CUTE 3
+#define MOOD_HAPPY   2
+#define MOOD_CUTE    3
 
 typedef struct game{
 	int health;

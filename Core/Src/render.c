@@ -38,19 +38,16 @@ void displaySprite(game* game){
     case MOOD_CUTE:
       ssd1306_DrawBitmap(0,0, epd_bitmap_spriteCute, SSD1306_WIDTH, SSD1306_HEIGHT, White);
       break;
-    default:
-      ssd1306_Fill(White);
-      break;
     }
 
 }
 
 void displayScreen(game* game){
     ssd1306_Fill(Black);
+    displaySprite(game);
     displayHealth(game);
     displayHunger(game);
     displayHappiness(game);
-    displaySprite(game);
     ssd1306_UpdateScreen();
 }
 

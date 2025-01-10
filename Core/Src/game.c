@@ -41,13 +41,13 @@ Mood checkMood(struct game* self) {
     overall += self->happiness;
     overall /= 3;
 
-    if (overall <= 20){
+    if (overall <= 15){
         return MOOD_SERIOUS;
     }
-    if (overall <= 50){
+    if (overall <= 30){
         return MOOD_UNHAPPY;
     }
-    if (overall <= 80){
+    if (overall <= 45){
         return MOOD_HAPPY;
     }
     else{
@@ -63,6 +63,7 @@ void game_init(game* game, int health, int hunger, int happiness) {
 	game->hurt = hurt;
 	game->play = play;
 	game->eat = eat;
+	game->checkMood = checkMood;
 
 }
 

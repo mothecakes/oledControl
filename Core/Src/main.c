@@ -107,11 +107,11 @@ int main(void)
   render Render;
   render_init(&Render);
 
-      int* current;
+      //int* current;
       int state1;
       int state2;
       int state3;
-      int state4;
+      //int state4;
 
   /* USER CODE END 2 */
 
@@ -126,25 +126,20 @@ int main(void)
       state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
       state2 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_6);
       state3 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);
-      state4 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9);
+      //state4 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9);
 
 
-      if (state3) {
-    	  Game.hurt(&Game ,10);
+      if (state1) {
+    	  Game.play(&Game, 10);
       }
       if (state2) {
     	  Game.eat(&Game ,10);
       }
-      if (state1) {
-    	  Game.play(&Game, 10);
+      if (state3) {
+    	  Game.hurt(&Game ,10);
       }
-      ssd1306_Fill(Black);
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, SSD1306_WIDTH, SSD1306_HEIGHT, White);
-      Render.displayHappiness(&Game);
-      Render.displayHunger(&Game);
-      Render.displayHealth(&Game);
 
-      ssd1306_UpdateScreen();
+      Render.displayScreen(&Game);
       HAL_Delay(50);
   }
   /* USER CODE END 3 */

@@ -23,8 +23,43 @@ void displayHappiness(game* game) {
 	ssd1306_FillRectangle(STARTING_X, STARTING_Y, STARTING_X + 1, game->happiness + STARTING_Y, Black);
 }
 
+void displaySprite(game* game){
+    Mood mood = game->checkMood(game);
+    switch (mood) {
+    case MOOD_SERIOUS:
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      break;
+    case MOOD_UNHAPPY:
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteUnhappy, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      break;
+    case MOOD_HAPPY:
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteHappy, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      break;
+    case MOOD_CUTE:
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteCute, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      break;
+    default:
+      ssd1306_Fill(White);
+      break;
+    }
+
+}
+
+void displayScreen(game* game){
+    ssd1306_Fill(Black);
+    displayHealth(game);
+    displayHunger(game);
+    displayHappiness(game);
+    displaySprite(game);
+    ssd1306_UpdateScreen();
+}
+
+
 void render_init(render* render) {
+    ssd1306_Init();
 	render->displayHealth = displayHealth;
 	render->displayHunger = displayHunger;
 	render->displayHappiness = displayHappiness;
+	render->displaySprite = displaySprite;
+	render->displayScreen = displayScreen;
 }

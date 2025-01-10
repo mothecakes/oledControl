@@ -1,4 +1,6 @@
 ../Core/Src/render.c:11:6:displayHealth	40	static
 ../Core/Src/render.c:16:6:displayHunger	40	static
 ../Core/Src/render.c:21:6:displayHappiness	40	static
-../Core/Src/render.c:26:6:render_init	16	static
+../Core/Src/render.c:26:6:displaySprite	32	static
+../Core/Src/render.c:48:6:displayScreen	16	static
+../Core/Src/render.c:58:6:render_init	16	static

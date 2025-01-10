@@ -16,7 +16,8 @@ typedef struct {
 	void (*displayHealth)(game* game);
 	void (*displayHunger)(game* game);
 	void (*displayHappiness)(game* game);
-
+	void (*displaySprite)(game* game);
+	void (*displayScreen)(game* game);
 
 } render;
 

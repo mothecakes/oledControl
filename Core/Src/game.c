@@ -33,6 +33,28 @@ void eat(game* game, int amount) {
 		game->hunger = 0;
 	}
 }
+
+Mood checkMood(struct game* self) {
+    int overall = 0;
+    overall += self->health;
+    overall += self->hunger;
+    overall += self->happiness;
+    overall /= 3;
+
+    if (overall <= 20){
+        return MOOD_SERIOUS;
+    }
+    if (overall <= 50){
+        return MOOD_UNHAPPY;
+    }
+    if (overall <= 80){
+        return MOOD_HAPPY;
+    }
+    else{
+        return MOOD_CUTE;
+    }
+}
+
 void game_init(game* game, int health, int hunger, int happiness) {
 	game->health = health;
 	game->hunger = hunger;

@@ -13,7 +13,7 @@ typedef int ActionType;
 
 #define HEALTH_MAX 60
 #define HUNGER_MAX 60
-#define HEAL_MAX   60
+#define HAPPINESS_MAX   60
 
 #define MOOD_SERIOUS 0
 #define MOOD_UNHAPPY 1

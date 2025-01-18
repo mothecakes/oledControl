@@ -19,7 +19,7 @@ typedef struct {
 	void (*displaySprite)(game* game);
 	void (*displayScreen)(game* game);
 
-	void (*writeText)(game* game);
+	void (*writeText)(void*, int val);
 
 } render;
 

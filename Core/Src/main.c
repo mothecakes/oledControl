@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "stdio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -128,16 +129,20 @@ int main(void)
 
 
       if (state1) {
-    	  Game.play(&Game, 10);
+    	  Game.resolveHappiness(&Game);
+    	  printf("called\n");
       }
       if (state2) {
-    	  Game.eat(&Game,  10);
+    	  Game.resolveHunger(&Game);
+    	  printf("called\n");
       }
       if (state3) {
-    	  Game.hurt(&Game, 10);
+    	  Game.resolveHealth(&Game);
+    	  printf("called\n");
       }
       if (state4) {
           Game.switchAction(&Game);
+    	  printf("called\n");
       }
 
       Render.displayScreen(&Game);

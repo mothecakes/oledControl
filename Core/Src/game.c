@@ -11,7 +11,7 @@
 // Negative Actions
 //
 
-void hurt(game* game, int amount) {
+static void hurt(game* game, int amount) {
 	if (game->health >= amount) {
 		game->health -= amount;
 	}
@@ -20,7 +20,7 @@ void hurt(game* game, int amount) {
 	}
 }
 
-void bore(game* game, int amount) {
+static void bore(game* game, int amount) {
 	if (game->happiness >= amount) {
 		game->happiness -= amount;
 	}
@@ -29,7 +29,7 @@ void bore(game* game, int amount) {
 	}
 }
 
-void starve(game* game, int amount) {
+static void starve(game* game, int amount) {
 	if (game->hunger >= amount) {
 		game->hunger -= amount;
 	}
@@ -42,7 +42,7 @@ void starve(game* game, int amount) {
 // Positive Actions
 //
 
-void heal(game* game, int amount) {
+static void heal(game* game, int amount) {
 	if ((game->health + amount) > HEALTH_MAX) {
 		game->health = HEALTH_MAX;
 	}
@@ -51,7 +51,7 @@ void heal(game* game, int amount) {
 	}
 }
 
-void eat(game* game, int amount) {
+static void eat(game* game, int amount) {
 	if ((game->hunger + amount) > HUNGER_MAX) {
 		game->hunger = HUNGER_MAX;
 	}
@@ -60,7 +60,7 @@ void eat(game* game, int amount) {
 	}
 }
 
-void play(game* game, int amount) {
+static void play(game* game, int amount) {
 	if ((game->happiness + amount) > HAPPINESS_MAX) {
 		game->happiness = HAPPINESS_MAX;
 	}
@@ -73,7 +73,7 @@ void play(game* game, int amount) {
 //  Returns current mood of the mon
 //
 
-Mood checkMood(struct game* self) {
+static Mood checkMood(struct game* self) {
     int overall = 0;
     overall += self->health;
     overall += self->hunger;
@@ -102,20 +102,32 @@ void switchAction(struct game* self) {
 		self->actionType = ACTION_GOOD;
 }
 
+void resolveHunger(game* self) {
+	self->actionType == ACTION_GOOD ? eat(self, ACTION_AMT) : starve(self, ACTION_AMT);
+}
+
+void resolveHealth(game* self) {
+	self->actionType == ACTION_GOOD ? heal(self, ACTION_AMT) : hurt(self, ACTION_AMT);
+}
+
+void resolveHappiness(game* self) {
+	self->actionType == ACTION_GOOD ? play(self, ACTION_AMT) : bore(self, ACTION_AMT);
+}
+
+
+
+
 void game_init(game* game, int health, int hunger, int happiness) {
 	game->health = health;
 	game->hunger = hunger;
 	game->happiness = happiness;
-	game->actionType = ACTION_GOOD;
 
+	game->actionType = ACTION_EVIL;
 	game->switchAction = switchAction;
 
-	game->hurt = hurt;
-	game->bore = bore;
-	game->starve = starve;
-	game->heal = heal;
-	game->eat = eat;
-	game->play = play;
+	game->resolveHunger = resolveHunger;
+	game->resolveHappiness = resolveHappiness;
+	game->resolveHealth = resolveHealth;
 
 	game->checkMood = checkMood;
 

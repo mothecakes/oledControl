@@ -60,6 +60,7 @@ void writeText(void* subject, char* val) {
 
 void render_init(render* render) {
     ssd1306_Init();
+    ssd1306_Fill(Black);
 	render->displayHealth = displayHealth;
 	render->displayHunger = displayHunger;
 	render->displayHappiness = displayHappiness;

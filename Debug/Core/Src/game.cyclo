@@ -1,5 +1,9 @@
-../Core/Src/game.c:10:6:hurt	2
-../Core/Src/game.c:19:6:play	2
-../Core/Src/game.c:28:6:eat	2
-../Core/Src/game.c:37:6:checkMood	4
-../Core/Src/game.c:58:6:game_init	1
+../Core/Src/game.c:14:6:hurt	2
+../Core/Src/game.c:23:6:bore	2
+../Core/Src/game.c:32:6:starve	2
+../Core/Src/game.c:45:6:heal	2
+../Core/Src/game.c:54:6:eat	2
+../Core/Src/game.c:63:6:play	2
+../Core/Src/game.c:76:6:checkMood	4
+../Core/Src/game.c:97:6:switchAction	2
+../Core/Src/game.c:105:6:game_init	1

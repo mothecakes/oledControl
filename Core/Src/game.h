@@ -28,7 +28,7 @@ typedef struct game{
 	int hunger;
 	int happiness;
 
-	ActionType actionType = ACTION_GOOD;
+	ActionType actionType;
 	void (*switchAction)(struct game* self);
 
 	//negative actions
@@ -42,6 +42,7 @@ typedef struct game{
 
 	Mood (*checkMood)(struct game* self);
 } game;
+
 
 void game_init(game* game, int health, int hunger, int happiness);
 

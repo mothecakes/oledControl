@@ -3,4 +3,4 @@
 ../Core/Src/render.c:21:6:displayHappiness	1
 ../Core/Src/render.c:26:6:displaySprite	5
 ../Core/Src/render.c:45:6:displayScreen	1
-../Core/Src/render.c:55:6:render_init	1
+../Core/Src/render.c:61:6:render_init	1

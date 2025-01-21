@@ -11,15 +11,17 @@
 #include "game.h"
 #include "sprites.h"
 #include "ssd1306.h"
+#include "ssd1306_fonts.h"
 
 typedef struct {
-	void (*displayHealth)(game* game);
-	void (*displayHunger)(game* game);
-	void (*displayHappiness)(game* game);
-	void (*displaySprite)(game* game);
-	void (*displayScreen)(game* game);
+	void (*displayHealth)(const game* game);
+	void (*displayHunger)(const game* game);
+	void (*displayHappiness)(const game* game);
+	void (*displaySprite)(const game* game);
+	void (*displayScreen)(const game* game);
+	void (*displayKarma)(const game* game);
 
-//	void (*writeText)(void*, int val);
+	void (*writeText)(const char* str);
 
 } render;
 

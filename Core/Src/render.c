@@ -8,22 +8,22 @@
 
 const int STARTING_Y = 2;
 
-void displayHealth(game* game) {
+void displayHealth(const game* game) {
 	const int STARTING_X = 2;
 	ssd1306_FillRectangle(STARTING_X, STARTING_Y, STARTING_X + 1, game->health + STARTING_Y, Black);
 }
 
-void displayHunger(game* game) {
+void displayHunger(const game* game) {
 	const int STARTING_X = 6;
 	ssd1306_FillRectangle(STARTING_X, STARTING_Y, STARTING_X + 1, game->hunger + STARTING_Y, Black);
 }
 
-void displayHappiness(game* game) {
+void displayHappiness(const game* game) {
 	const int STARTING_X = 10;
 	ssd1306_FillRectangle(STARTING_X, STARTING_Y, STARTING_X + 1, game->happiness + STARTING_Y, Black);
 }
 
-void displaySprite(game* game){
+void displaySprite(const game* game){
     Mood mood = game->checkMood(game);
     switch (mood) {
     case MOOD_SERIOUS:
@@ -42,21 +42,27 @@ void displaySprite(game* game){
 
 }
 
-void displayScreen(game* game){
+void writeText(const char* str) {
+	ssd1306_SetCursor(32, 5);
+	ssd1306_WriteString(str, Font_6x8, Black);
+}
+
+void displayKarma(const game* game) {
+    ActionType mood = game->actionType;
+    const char* karma = mood ? "EVIL" : "GOOD";
+    writeText(karma);
+}
+
+void displayScreen(const game* game){
     ssd1306_Fill(Black);
     displaySprite(game);
     displayHealth(game);
     displayHunger(game);
     displayHappiness(game);
+    displayKarma(game);
     ssd1306_UpdateScreen();
 }
 
-/*
-void writeText(void* subject, char* val) {
-	ssd1306_setCursor(32, 5);
-	ssd1306_WriteString(val, Font_6x8, Black);
-}
-*/
 
 void render_init(render* render) {
     ssd1306_Init();
@@ -66,5 +72,7 @@ void render_init(render* render) {
 	render->displayHappiness = displayHappiness;
 	render->displaySprite = displaySprite;
 	render->displayScreen = displayScreen;
-//	render->writeText = writeText;
+	render->displayKarma = displayKarma;
+
+	render->writeText = writeText;
 }

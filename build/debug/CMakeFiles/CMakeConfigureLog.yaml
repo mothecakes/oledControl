@@ -1,0 +1,943 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: MSYS - 3.5.4-0bc1222b.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Joseph Sary/STM32CubeIDE/workspace_1.16.1/oledControl/build/debug/CMakeFiles/CMakeScratch/TryCompile-EzK4JV"
+      binary: "C:/Users/Joseph Sary/STM32CubeIDE/workspace_1.16.1/oledControl/build/debug/CMakeFiles/CMakeScratch/TryCompile-EzK4JV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -fdata-sections;-ffunction-sections;--specs=nano.specs;-Wl,--gc-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/devkitpro/msys2/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:16 (project)"
+    checks:
+      - "Check for working C compiler: /c/ST/STM32CubeCLT_1.15.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe"
+    directories:
+      source: "C:/Users/Joseph Sary/STM32CubeIDE/workspace_1.16.1/oledControl/build/debug/CMakeFiles/CMakeScratch/TryCompile-QkUOJi"
+      binary: "C:/Users/Joseph Sary/STM32CubeIDE/workspace_1.16.1/oledControl/build/debug/CMakeFiles/CMakeScratch/TryCompile-QkUOJi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+      exitCode: 1
+...

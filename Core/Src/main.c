@@ -18,15 +18,13 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "game.h"
+#include "render.h"
+#include "input.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ssd1306.h"
-#include "ssd1306_fonts.h"
 
-#include "sprites.h"
-#include "render.h"
-#include "game.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,11 +103,9 @@ int main(void)
   render Render;
   render_init(&Render);
 
-      //int* current;
-      int state1;
-      int state2;
-      int state3;
-      int state4;
+  input Input;
+  input_init(&Input);
+
 
   /* USER CODE END 2 */
 
@@ -120,41 +116,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
-      state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
-      state2 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_6);
-      state3 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);
-      state4 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9);
-
-
-      if (state1) {
-    	  Game.resolveHappiness(&Game);
-    	  printf("called\n");
-      }
-      if (state2) {
-    	  Game.resolveHunger(&Game);
-    	  printf("called\n");
-      }
-      if (state3) {
-    	  Game.resolveHealth(&Game);
-    	  printf("called\n");
-      }
-      if (state4) {
-          Game.switchAction(&Game);
-    	  printf("called\n");
-      }
-      if (state1 || state2 || state3 || state4)
-          if (Game.actionType == ACTION_EVIL)
-              HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
-          else
-              HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-      else
-      {
-          HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-          HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
-      }
-
-
+      Input.buttonCheck(&Game);
       Render.displayScreen(&Game);
       HAL_Delay(50);
   }

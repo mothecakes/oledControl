@@ -1,5 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+Core/Src/input.o: ../Core/Src/input.c ../Core/Src/input.h \
+ ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
@@ -31,11 +31,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Core/sprites/sprites.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_conf.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306.h \
- ../Core/Inc/_ansi.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_conf.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_fonts.h \
- C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306.h \
- ../Core/Src/input.h
+ C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306.h
+../Core/Src/input.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -70,8 +69,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Core/sprites/sprites.h:
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_conf.h:
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306.h:
-../Core/Inc/_ansi.h:
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_conf.h:
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_fonts.h:
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306.h:
-../Core/Src/input.h:

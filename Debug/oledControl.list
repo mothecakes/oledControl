@@ -35,17 +35,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_rnglists 00000869  00000000  00000000  00014890  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00015c09  00000000  00000000  000150f9  2**0
+ 16 .debug_macro  00015b72  00000000  00000000  000150f9  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000e7ac  00000000  00000000  0002ad02  2**0
+ 17 .debug_line   0000e7b8  00000000  00000000  0002ac6b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0008803c  00000000  00000000  000394ae  2**0
+ 18 .debug_str    00087eb4  00000000  00000000  00039423  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000c14ea  2**0
+ 19 .comment      00000043  00000000  00000000  000c12d7  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00002cb0  00000000  00000000  000c1530  2**2
+ 20 .debug_frame  00002cb0  00000000  00000000  000c131c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000006d  00000000  00000000  000c41e0  2**0
+ 21 .debug_line_str 0000006d  00000000  00000000  000c3fcc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1517,10 +1517,10 @@ __STATIC_FORCEINLINE void __disable_irq(void)
  8000b4a:	e7fd      	b.n	8000b48 <Error_Handler+0x8>
 
 08000b4c <displayHealth>:
- */
 #include "render.h"
 
 const int STARTING_Y = 2;
+
 
 void displayHealth(const game* game) {
  8000b4c:	b590      	push	{r4, r7, lr}
@@ -1653,8 +1653,8 @@ void displaySprite(const game* game){
  8000c28:	08000c5d 	.word	0x08000c5d
  8000c2c:	08000c73 	.word	0x08000c73
     case MOOD_SERIOUS:
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, SSD1306_WIDTH, SSD1306_HEIGHT, White);
- 8000c30:	2301      	movs	r3, #1
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, SSD1306_WIDTH, SSD1306_HEIGHT, Black);
+ 8000c30:	2300      	movs	r3, #0
  8000c32:	9301      	str	r3, [sp, #4]
  8000c34:	2340      	movs	r3, #64	@ 0x40
  8000c36:	9300      	str	r3, [sp, #0]
@@ -1666,8 +1666,8 @@ void displaySprite(const game* game){
       break;
  8000c44:	e020      	b.n	8000c88 <displaySprite+0x88>
     case MOOD_UNHAPPY:
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteUnhappy, SSD1306_WIDTH, SSD1306_HEIGHT, White);
- 8000c46:	2301      	movs	r3, #1
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteUnhappy, SSD1306_WIDTH, SSD1306_HEIGHT, Black);
+ 8000c46:	2300      	movs	r3, #0
  8000c48:	9301      	str	r3, [sp, #4]
  8000c4a:	2340      	movs	r3, #64	@ 0x40
  8000c4c:	9300      	str	r3, [sp, #0]
@@ -1679,8 +1679,8 @@ void displaySprite(const game* game){
       break;
  8000c5a:	e015      	b.n	8000c88 <displaySprite+0x88>
     case MOOD_HAPPY:
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteHappy, SSD1306_WIDTH, SSD1306_HEIGHT, White);
- 8000c5c:	2301      	movs	r3, #1
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteHappy, SSD1306_WIDTH, SSD1306_HEIGHT, Black);
+ 8000c5c:	2300      	movs	r3, #0
  8000c5e:	9301      	str	r3, [sp, #4]
  8000c60:	2340      	movs	r3, #64	@ 0x40
  8000c62:	9300      	str	r3, [sp, #0]
@@ -1692,8 +1692,8 @@ void displaySprite(const game* game){
       break;
  8000c70:	e00a      	b.n	8000c88 <displaySprite+0x88>
     case MOOD_CUTE:
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteCute, SSD1306_WIDTH, SSD1306_HEIGHT, White);
- 8000c72:	2301      	movs	r3, #1
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteCute, SSD1306_WIDTH, SSD1306_HEIGHT, Black);
+ 8000c72:	2300      	movs	r3, #0
  8000c74:	9301      	str	r3, [sp, #4]
  8000c76:	2340      	movs	r3, #64	@ 0x40
  8000c78:	9300      	str	r3, [sp, #0]
@@ -1780,8 +1780,8 @@ void displayScreen(const game* game){
  8000d02:	b082      	sub	sp, #8
  8000d04:	af00      	add	r7, sp, #0
  8000d06:	6078      	str	r0, [r7, #4]
-    ssd1306_Fill(Black);
- 8000d08:	2000      	movs	r0, #0
+    ssd1306_Fill(White);
+ 8000d08:	2001      	movs	r0, #1
  8000d0a:	f000 fa0b 	bl	8001124 <ssd1306_Fill>
     displaySprite(game);
  8000d0e:	6878      	ldr	r0, [r7, #4]

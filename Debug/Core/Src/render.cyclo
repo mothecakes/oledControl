@@ -1,8 +1,8 @@
-../Core/Src/render.c:11:6:displayHealth	1
-../Core/Src/render.c:16:6:displayHunger	1
-../Core/Src/render.c:21:6:displayHappiness	1
-../Core/Src/render.c:26:6:displaySprite	5
-../Core/Src/render.c:45:6:writeText	1
-../Core/Src/render.c:50:6:displayKarma	2
-../Core/Src/render.c:56:6:displayScreen	1
-../Core/Src/render.c:67:6:render_init	1
+../Core/Src/render.c:12:6:displayHealth	1
+../Core/Src/render.c:17:6:displayHunger	1
+../Core/Src/render.c:22:6:displayHappiness	1
+../Core/Src/render.c:27:6:displaySprite	5
+../Core/Src/render.c:46:6:writeText	1
+../Core/Src/render.c:51:6:displayKarma	2
+../Core/Src/render.c:57:6:displayScreen	1
+../Core/Src/render.c:68:6:render_init	1

@@ -8,6 +8,7 @@
 
 const int STARTING_Y = 2;
 
+
 void displayHealth(const game* game) {
 	const int STARTING_X = 2;
 	ssd1306_FillRectangle(STARTING_X, STARTING_Y, STARTING_X + 1, game->health + STARTING_Y, Black);
@@ -27,16 +28,16 @@ void displaySprite(const game* game){
     Mood mood = game->checkMood(game);
     switch (mood) {
     case MOOD_SERIOUS:
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteSerious, SSD1306_WIDTH, SSD1306_HEIGHT, Black);
       break;
     case MOOD_UNHAPPY:
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteUnhappy, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteUnhappy, SSD1306_WIDTH, SSD1306_HEIGHT, Black);
       break;
     case MOOD_HAPPY:
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteHappy, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteHappy, SSD1306_WIDTH, SSD1306_HEIGHT, Black);
       break;
     case MOOD_CUTE:
-      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteCute, SSD1306_WIDTH, SSD1306_HEIGHT, White);
+      ssd1306_DrawBitmap(0,0, epd_bitmap_spriteCute, SSD1306_WIDTH, SSD1306_HEIGHT, Black);
       break;
     }
 
@@ -54,7 +55,7 @@ void displayKarma(const game* game) {
 }
 
 void displayScreen(const game* game){
-    ssd1306_Fill(Black);
+    ssd1306_Fill(White);
     displaySprite(game);
     displayHealth(game);
     displayHunger(game);

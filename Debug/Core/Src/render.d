@@ -1,5 +1,5 @@
-Core/Src/render.o: ../Core/Src/render.c ../Core/Src/render.h \
- ../Core/Src/game.h \
+Core/Src/render.o: ../Core/Src/render.c ../Core/Inc/render.h \
+ ../Core/Inc/game.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Core/sprites/sprites.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_conf.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306.h \
@@ -34,8 +34,8 @@ Core/Src/render.o: ../Core/Src/render.c ../Core/Src/render.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_fonts.h \
  C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306.h
-../Core/Src/render.h:
-../Core/Src/game.h:
+../Core/Inc/render.h:
+../Core/Inc/game.h:
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Core/sprites/sprites.h:
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306_conf.h:
 C:/Users/Joseph\ Sary/STM32CubeIDE/workspace_1.16.1/oledControl/Drivers/OLED/ssd1306.h:

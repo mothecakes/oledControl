@@ -1,2 +1,2 @@
-Core/Src/game.o: ../Core/Src/game.c ../Core/Src/game.h
-../Core/Src/game.h:
+Core/Src/game.o: ../Core/Src/game.c ../Core/Inc/game.h
+../Core/Inc/game.h:

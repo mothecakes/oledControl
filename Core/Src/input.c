@@ -6,9 +6,9 @@
  */
 #include "input.h"
 
-void switchLights(game* Game) {
+void switch_lights(game* Game) {
       // PA5 PA6
-      if (Game->actionType == ACTION_GOOD) {
+      if (Game->action_type == ACTION_GOOD) {
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
       } else {
@@ -17,29 +17,29 @@ void switchLights(game* Game) {
       }
 }
 
-void buttonCheck( game* Game) {
+void button_check( game* Game) {
       int state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
       int state2 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_6);
       int state3 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);
       int state4 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9);
 
       if (state1) {
-    	  Game->resolveHappiness(Game);
+    	  Game->resolve_happiness(Game);
       }
       if (state2) {
-    	  Game->resolveHunger(Game);
+    	  Game->resolve_hunger(Game);
       }
       if (state3) {
-    	  Game->resolveHealth(Game);
+    	  Game->resolve_health(Game);
       }
       if (state4) {
-          Game->switchAction(Game);
+          Game->switch_action(Game);
       }
 
-      switchLights(Game);
+      switch_lights(Game);
 }
 
 
 void input_init(input* self) {
-    self->buttonCheck = buttonCheck;
+    self->button_check = button_check;
 }

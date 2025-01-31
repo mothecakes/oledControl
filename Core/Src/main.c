@@ -116,8 +116,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      Input.buttonCheck(&Game);
-      Render.displayScreen(&Game);
+      Input.button_check(&Game);
+      Render.display_screen(&Game);
       HAL_Delay(50);
   }
   /* USER CODE END 3 */

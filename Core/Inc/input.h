@@ -14,9 +14,9 @@
 
 typedef struct Input{
     // check pins and call correct functions
-    void (*buttonCheck)( game* Game);
+    void (*button_check)( game* Game);
     // changes lights for karma actions
-    //  void switchLights(const game* Game);
+    // void switch_lights(const game* Game);
 } input;
 
 void input_init(input* self);

@@ -30,14 +30,14 @@ typedef struct game{
 	int hunger;
 	int happiness;
 
-	ActionType actionType;
-	void (*switchAction)(struct game* self);
+	ActionType action_type;
+	void (*switch_action)(struct game* self);
 
-	Mood (*checkMood)(struct game* self);
+	Mood (*check_mood)(struct game* self);
 
-	void (*resolveHunger)   (struct game*self);
-	void (*resolveHealth)   (struct game*self);
-	void (*resolveHappiness)(struct game*self);
+	void (*resolve_hunger)   (struct game* self);
+	void (*resolve_health)   (struct game* self);
+	void (*resolve_happiness)(struct game* self);
 
 	//   PRIVATE FUNCTION DECLARATIONS    //
 	// negative actions

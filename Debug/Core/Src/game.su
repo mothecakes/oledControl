@@ -4,9 +4,9 @@
 ../Core/Src/game.c:45:13:heal	16	static
 ../Core/Src/game.c:54:13:eat	16	static
 ../Core/Src/game.c:63:13:play	16	static
-../Core/Src/game.c:76:13:checkMood	24	static
-../Core/Src/game.c:97:6:switchAction	16	static
-../Core/Src/game.c:105:6:resolveHunger	16	static
-../Core/Src/game.c:109:6:resolveHealth	16	static
-../Core/Src/game.c:113:6:resolveHappiness	16	static
+../Core/Src/game.c:76:13:check_mood	24	static
+../Core/Src/game.c:97:6:switch_action	16	static
+../Core/Src/game.c:105:6:resolve_hunger	16	static
+../Core/Src/game.c:109:6:resolve_health	16	static
+../Core/Src/game.c:113:6:resolve_happiness	16	static
 ../Core/Src/game.c:120:6:game_init	24	static

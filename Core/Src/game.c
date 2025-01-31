@@ -73,7 +73,7 @@ static void play(game* game, int amount) {
 //  Returns current mood of the mon
 //
 
-static Mood checkMood(struct game* self) {
+static Mood check_mood(struct game* self) {
     int overall = 0;
     overall += self->health;
     overall += self->hunger;
@@ -94,24 +94,24 @@ static Mood checkMood(struct game* self) {
     }
 }
 
-void switchAction(struct game* self) {
-	if (self->actionType == ACTION_GOOD) {
-		self->actionType = ACTION_EVIL;
+void switch_action(struct game* self) {
+	if (self->action_type == ACTION_GOOD) {
+		self->action_type = ACTION_EVIL;
 	}
 	else
-		self->actionType = ACTION_GOOD;
+		self->action_type = ACTION_GOOD;
 }
 
-void resolveHunger(game* self) {
-	self->actionType == ACTION_GOOD ? eat(self, ACTION_AMT) : starve(self, ACTION_AMT);
+void resolve_hunger(game* self) {
+	self->action_type == ACTION_GOOD ? eat(self, ACTION_AMT) : starve(self, ACTION_AMT);
 }
 
-void resolveHealth(game* self) {
-	self->actionType == ACTION_GOOD ? heal(self, ACTION_AMT) : hurt(self, ACTION_AMT);
+void resolve_health(game* self) {
+	self->action_type == ACTION_GOOD ? heal(self, ACTION_AMT) : hurt(self, ACTION_AMT);
 }
 
-void resolveHappiness(game* self) {
-	self->actionType == ACTION_GOOD ? play(self, ACTION_AMT) : bore(self, ACTION_AMT);
+void resolve_happiness(game* self) {
+	self->action_type == ACTION_GOOD ? play(self, ACTION_AMT) : bore(self, ACTION_AMT);
 }
 
 
@@ -122,14 +122,14 @@ void game_init(game* game, int health, int hunger, int happiness) {
 	game->hunger = hunger;
 	game->happiness = happiness;
 
-	game->actionType = ACTION_EVIL;
-	game->switchAction = switchAction;
+	game->action_type = ACTION_EVIL;
+	game->switch_action = switch_action;
 
-	game->resolveHunger = resolveHunger;
-	game->resolveHappiness = resolveHappiness;
-	game->resolveHealth = resolveHealth;
+	game->resolve_hunger = resolve_hunger;
+	game->resolve_happiness = resolve_happiness;
+	game->resolve_health = resolve_health;
 
-	game->checkMood = checkMood;
+	game->check_mood = check_mood;
 
 }
 

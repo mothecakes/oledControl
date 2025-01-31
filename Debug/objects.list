@@ -1,3 +1,4 @@
+"./Core/Src/animation.o"
 "./Core/Src/game.o"
 "./Core/Src/input.o"
 "./Core/Src/main.o"

@@ -9,19 +9,21 @@
 #define SRC_RENDER_H_
 
 #include "game.h"
-#include "sprites.h"
 #include "ssd1306.h"
 #include "ssd1306_fonts.h"
+#include "animation.h"
 
 typedef struct {
-	void (*displayHealth)(const game* game);
-	void (*displayHunger)(const game* game);
-	void (*displayHappiness)(const game* game);
-	void (*displaySprite)(const game* game);
-	void (*displayScreen)(const game* game);
-	void (*displayKarma)(const game* game);
+	void (*display_health)(const game* game);
+	void (*display_hunger)( game* game);
+	void (*display_happiness)( game* game);
+	void (*display_sprite)( game* game);
+	void (*display_screen)( game* game);
+	void (*display_karma)( game* game);
 
-	void (*writeText)(const char* str);
+	bool (*play_animation)(animation* self);
+
+	void (*write_text)(char* str);
 
 } render;
 

@@ -4,9 +4,9 @@
 ../Core/Src/game.c:45:13:heal	2
 ../Core/Src/game.c:54:13:eat	2
 ../Core/Src/game.c:63:13:play	2
-../Core/Src/game.c:76:13:checkMood	4
-../Core/Src/game.c:97:6:switchAction	2
-../Core/Src/game.c:105:6:resolveHunger	2
-../Core/Src/game.c:109:6:resolveHealth	2
-../Core/Src/game.c:113:6:resolveHappiness	2
+../Core/Src/game.c:76:13:check_mood	4
+../Core/Src/game.c:97:6:switch_action	2
+../Core/Src/game.c:105:6:resolve_hunger	2
+../Core/Src/game.c:109:6:resolve_health	2
+../Core/Src/game.c:113:6:resolve_happiness	2
 ../Core/Src/game.c:120:6:game_init	1

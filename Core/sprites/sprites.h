@@ -13,33 +13,34 @@ enum sprite {
     spriteCute,
     spriteHappy,
     spriteUnhappy,
-    spriteSerious
+    spriteSerious,
+    smiley
 };
 
-typedef const unsigned char Frame;
+typedef const unsigned char Sprite;
 
 typedef int KeyframeIndex;
 
-typedef struct animation_frame {
+typedef struct SpriteFrame {
     KeyframeIndex key;
     int x;
     int y;
     int w;
     int h;
 
-    Frame* frame;
-} animation_frame;
+    Sprite* sprite;
+} SpriteFrame;
 
 
-extern Frame* sprites_arr[];
+extern Sprite* sprites_arr[];
 
-Frame epd_bitmap_spriteCute [];
-Frame epd_bitmap_spriteHappy [];
-Frame epd_bitmap_spriteUnhappy [];
-Frame epd_bitmap_spriteSerious [];
-Frame smiley[];
+Sprite epd_bitmap_spriteCute [];
+Sprite epd_bitmap_spriteHappy [];
+Sprite epd_bitmap_spriteUnhappy [];
+Sprite epd_bitmap_spriteSerious [];
+Sprite smiley[];
 
-void init_animation_frame(animation_frame* self, Frame* p_frame, KeyframeIndex p_key, int p_x, int p_y, int p_w, int p_h);
+void SpriteFrame_Init(SpriteFrame* self, Sprite* p_sprite, KeyframeIndex p_key, int p_x, int p_y, int p_w, int p_h);
 
 
 #endif /*SPRITES_SPRITES_H_*/

@@ -100,8 +100,7 @@ int main(void)
   game Game;
   game_init(&Game, 60,60,60);
 
-  render Render;
-  render_init(&Render);
+  render_init();
 
   input Input;
   input_init(&Input);
@@ -117,7 +116,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
       Input.button_check(&Game);
-      Render.display_screen(&Game);
+      render_DisplayScreen(&Game);
       HAL_Delay(50);
   }
   /* USER CODE END 3 */

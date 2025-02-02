@@ -1,1 +1,1 @@
-../Core/sprites/sprites.c:9:6:init_animation_frame	24	static
+../Core/sprites/sprites.c:9:6:SpriteFrame_Init	24	static

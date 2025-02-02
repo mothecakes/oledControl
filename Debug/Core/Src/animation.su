@@ -1,1 +1,5 @@
-../Core/Src/animation.c:10:6:animation_init	24	static
+../Core/Src/animation.c:17:6:animation_OrderFrames	40	static
+../Core/Src/animation.c:32:6:animation_FindConflicts	24	static
+../Core/Src/animation.c:47:6:animation_Play	32	static
+../Core/Src/animation.c:75:6:animation_LoadMedia	32	static
+../Core/Src/animation.c:88:6:animation_Init	24	static

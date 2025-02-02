@@ -59,7 +59,7 @@ bool animation_Play(animation* self) {
         }
     }
     // render
-    render_DisplaySprite(self->frames[frameToDisplay]);
+    render_DisplaySprite(&self->frames[frameToDisplay]);
 
     // progress the frames until the end
     self->current_frame += 1;
@@ -71,8 +71,14 @@ bool animation_Play(animation* self) {
         return true;
 }
 
-void animation_SetInit() {
-
+// initializes all frames and animations in an animation array. subject to change
+void animation_LoadMedia(animation* self, SpriteFrame* frames) {
+    SpriteFrame_Init(frames,sprites_arr[smiley],0,50,50,10,10);
+    SpriteFrame_Init(frames + 1,sprites_arr[smiley],1,52,50,10,10);
+    SpriteFrame_Init(frames + 2,sprites_arr[smiley],2,54,50,10,10);
+    SpriteFrame_Init(frames + 3,sprites_arr[smiley],3,56,50,10,10);
+    SpriteFrame_Init(frames + 4,sprites_arr[smiley],4,58,50,10,10);
+    animation_Init(self, frames,5);
 }
 
 

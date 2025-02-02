@@ -1,1 +1,1 @@
-../Core/sprites/sprites.c:9:6:init_animation_frame	1
+../Core/sprites/sprites.c:9:6:SpriteFrame_Init	1

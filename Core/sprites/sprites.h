@@ -34,11 +34,13 @@ typedef struct SpriteFrame {
 
 extern Sprite* sprites_arr[];
 
-Sprite epd_bitmap_spriteCute [];
-Sprite epd_bitmap_spriteHappy [];
-Sprite epd_bitmap_spriteUnhappy [];
-Sprite epd_bitmap_spriteSerious [];
-Sprite smiley[];
+/*
+Sprite epd_bitmap_spriteCute [128 * 64];
+Sprite epd_bitmap_spriteHappy [128 * 64];
+Sprite epd_bitmap_spriteUnhappy [128 * 64];
+Sprite epd_bitmap_spriteSerious [128 * 64];
+Sprite epd_bitmap_smiley[10 * 10];
+*/
 
 void SpriteFrame_Init(SpriteFrame* self, Sprite* p_sprite, KeyframeIndex p_key, int p_x, int p_y, int p_w, int p_h);
 

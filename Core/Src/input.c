@@ -5,6 +5,7 @@
  *      Author: Joseph Sary
  */
 #include "input.h"
+#include "animation.h"
 
 void switch_lights(game* Game) {
       // PA5 PA6
@@ -25,6 +26,7 @@ void button_check( game* Game) {
 
       if (state1) {
     	  Game->resolve_happiness(Game);
+
       }
       if (state2) {
     	  Game->resolve_hunger(Game);

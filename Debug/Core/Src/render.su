@@ -1,9 +1,8 @@
-../Core/Src/render.c:15:6:display_health	40	static
-../Core/Src/render.c:20:6:display_hunger	40	static
-../Core/Src/render.c:25:6:display_happiness	40	static
-../Core/Src/render.c:30:6:display_sprite	32	static
-../Core/Src/render.c:49:6:write_text	24	static
-../Core/Src/render.c:54:6:display_karma	24	static
-../Core/Src/render.c:60:6:display_screen	16	static
-../Core/Src/render.c:70:6:play_animation	64	static
-../Core/Src/render.c:87:6:render_init	16	static
+../Core/Src/render.c:17:6:render_DisplayHealth	40	static
+../Core/Src/render.c:22:6:render_DisplayHunger	40	static
+../Core/Src/render.c:27:6:render_DisplayHappiness	40	static
+../Core/Src/render.c:51:6:render_DisplaySprite	32	static
+../Core/Src/render.c:55:6:render_WriteText	24	static
+../Core/Src/render.c:60:6:render_DisplayKarma	24	static
+../Core/Src/render.c:66:6:render_DisplayScreen	16	static
+../Core/Src/render.c:76:6:render_Init	8	static

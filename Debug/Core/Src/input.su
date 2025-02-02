@@ -1,3 +1,3 @@
-../Core/Src/input.c:9:6:switch_lights	16	static
-../Core/Src/input.c:20:6:button_check	32	static
-../Core/Src/input.c:43:6:input_init	16	static
+../Core/Src/input.c:10:6:switch_lights	16	static
+../Core/Src/input.c:21:6:button_check	32	static
+../Core/Src/input.c:45:6:input_init	16	static

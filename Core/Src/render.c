@@ -4,26 +4,27 @@
  *  Created on: Jan 9, 2025
  *      Author: esqflowne
  */
+#include "ssd1306.h"
+#include "ssd1306_fonts.h"
 #include "render.h"
 
 #include "animation.h"
-#include "sprites.h"
 
 
 const int STARTING_Y = 2;
 
 
-void render_DisplayHealth(const game* game) {
+void render_DisplayHealth(game* game) {
 	const int STARTING_X = 2;
 	ssd1306_FillRectangle(STARTING_X, STARTING_Y, STARTING_X + 1, game->health + STARTING_Y, Black);
 }
 
-void render_DisplayHunger( game* game) {
+void render_DisplayHunger(game* game) {
 	const int STARTING_X = 6;
 	ssd1306_FillRectangle(STARTING_X, STARTING_Y, STARTING_X + 1, game->hunger + STARTING_Y, Black);
 }
 
-void render_DisplayHappiness( game* game) {
+void render_DisplayHappiness(game* game) {
 	const int STARTING_X = 10;
 	ssd1306_FillRectangle(STARTING_X, STARTING_Y, STARTING_X + 1, game->happiness + STARTING_Y, Black);
 }
@@ -48,8 +49,7 @@ void render_DisplaySprite(game* game){
 */
 
 void render_DisplaySprite(SpriteFrame* frame) {
-    SpriteFrame current = frame;
-    ssd1306_DrawBitmap(current.x, current.y, current, current.w, current.h, White);
+    ssd1306_DrawBitmap(frame->x, frame->y, frame->sprite, frame->w, frame->h, White);
 }
 
 void render_WriteText(char* str) {
@@ -60,7 +60,7 @@ void render_WriteText(char* str) {
 void render_DisplayKarma( game* game) {
     ActionType mood = game->action_type;
     char* karma = mood ? "EVIL" : "GOOD";
-    write_text(karma);
+    render_WriteText(karma);
 }
 
 void render_DisplayScreen( game* game){

@@ -26,10 +26,11 @@ typedef struct animation {
 
 	SpriteFrame* frames;
 
-	bool (*animation_Play)(animation* self);
+	bool (*animation_Play)(struct animation* self);
 } animation;
 
-void animation_Init(animation* self, SpriteFrame* p_frames, int* key_frames, int p_length);
+void animation_LoadMedia(animation* self, SpriteFrame* frames);
+void animation_Init(animation* self, SpriteFrame* p_frames, int p_length);
 
 
 #endif /* INC_ANIMATION_H_ */

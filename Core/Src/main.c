@@ -21,6 +21,8 @@
 #include "game.h"
 #include "render.h"
 #include "input.h"
+#include "animation.h"
+#include "sprites.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -100,12 +102,17 @@ int main(void)
   game Game;
   game_init(&Game, 60,60,60);
 
-  render_init();
+  render_Init();
 
   input Input;
   input_init(&Input);
 
+  animation smiley;
+  SpriteFrame smileyFrames[5];
 
+  animation_LoadMedia(&smiley, smileyFrames);
+
+  int ani_flag = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -116,6 +123,13 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
       Input.button_check(&Game);
+      int state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
+      if (state1) {
+          ani_flag = 1;
+      }
+      if (ani_flag) {
+          ani_flag = smiley.animation_Play(&smiley);
+      }
       render_DisplayScreen(&Game);
       HAL_Delay(50);
   }

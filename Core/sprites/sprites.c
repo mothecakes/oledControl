@@ -7,30 +7,23 @@
 #include "sprites.h"
 
 void SpriteFrame_Init(SpriteFrame* self, Sprite* p_sprite, KeyframeIndex p_key, int p_x, int p_y, int p_w, int p_h) {
-    self->sprite = p_frame;
+    self->sprite = p_sprite;
     self->key = p_key;
 
     self->x = p_x;
-    self->x = p_y;
-    self->x = p_w;
-    self->x = p_h;
+    self->y= p_y;
+    self->w = p_w;
+    self->h = p_h;
 }
 
 // Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 4160)
-int sprites_arr = 4;
-Sprite* epd_bitmap_allArray[] = {
-    epd_bitmap_spriteCute,
-    epd_bitmap_spriteHappy,
-    epd_bitmap_spriteSerious,
-    epd_bitmap_spriteUnhappy,
-    smiley
-};
+int sprites_arr_len = 4;
 
 #define SMILEY_HEIGHT 10
 #define SMILEY_WIDTH 10
 
 // array size is 12
-Sprite smiley[]  = {
+Sprite epd_bitmap_smiley[]  = {
   0x1e, 0x08,
   0x44, 0x0a,
   0x49, 0x80,
@@ -38,6 +31,7 @@ Sprite smiley[]  = {
   0xe5, 0x02,
   0x21, 0x07
 };
+
 
 // 'spriteHappy', 128x64px
 Sprite epd_bitmap_spriteHappy [] = {
@@ -308,3 +302,11 @@ Sprite epd_bitmap_spriteUnhappy []= {
     0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff
 };
 
+
+Sprite* sprites_arr[] = {
+    epd_bitmap_spriteCute,
+    epd_bitmap_spriteHappy,
+    epd_bitmap_spriteSerious,
+    epd_bitmap_spriteUnhappy,
+    epd_bitmap_smiley
+};

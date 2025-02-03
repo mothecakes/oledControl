@@ -49,7 +49,8 @@ void render_DisplaySprite(game* game){
 */
 
 void render_DisplaySprite(SpriteFrame* frame) {
-    ssd1306_DrawBitmap(frame->x, frame->y, frame->sprite, frame->w, frame->h, White);
+    ssd1306_DrawBitmap(frame->x, frame->y, frame->sprite, frame->w, frame->h, Black);
+    //ssd1306_UpdateScreen(); //consider delegating to a render_end func
 }
 
 void render_WriteText(char* str) {
@@ -64,12 +65,19 @@ void render_DisplayKarma( game* game) {
 }
 
 void render_DisplayScreen( game* game){
-    ssd1306_Fill(White); //consider delegating to a render_start func
+    //ssd1306_Fill(White); //consider delegating to a render_start func
     // render_Display_sprite(game);
     render_DisplayHealth(game);       //
     render_DisplayHunger(game);       // consider putting this in a render_Display stats func in game
     render_DisplayHappiness(game);    //
     render_DisplayKarma(game);        //
+}
+
+void render_Start() {
+    ssd1306_Fill(White);
+}
+
+void render_End() {
     ssd1306_UpdateScreen(); //consider delegating to a render_end func
 }
 

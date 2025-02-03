@@ -2,7 +2,9 @@
 ../Core/Src/render.c:22:6:render_DisplayHunger	1
 ../Core/Src/render.c:27:6:render_DisplayHappiness	1
 ../Core/Src/render.c:51:6:render_DisplaySprite	1
-../Core/Src/render.c:55:6:render_WriteText	1
-../Core/Src/render.c:60:6:render_DisplayKarma	2
-../Core/Src/render.c:66:6:render_DisplayScreen	1
-../Core/Src/render.c:76:6:render_Init	1
+../Core/Src/render.c:56:6:render_WriteText	1
+../Core/Src/render.c:61:6:render_DisplayKarma	2
+../Core/Src/render.c:67:6:render_DisplayScreen	1
+../Core/Src/render.c:76:6:render_Start	1
+../Core/Src/render.c:80:6:render_End	1
+../Core/Src/render.c:84:6:render_Init	1

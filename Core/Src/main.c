@@ -122,6 +122,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+      render_Start();
       Input.button_check(&Game);
       int state1 = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5);
       if (state1) {
@@ -131,6 +132,7 @@ int main(void)
           ani_flag = smiley.animation_Play(&smiley);
       }
       render_DisplayScreen(&Game);
+      render_End();
       HAL_Delay(50);
   }
   /* USER CODE END 3 */

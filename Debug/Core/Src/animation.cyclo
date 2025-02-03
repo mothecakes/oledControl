@@ -2,4 +2,4 @@
 ../Core/Src/animation.c:32:6:animation_FindConflicts	4
 ../Core/Src/animation.c:47:6:animation_Play	5
 ../Core/Src/animation.c:75:6:animation_LoadMedia	1
-../Core/Src/animation.c:88:6:animation_Init	1
+../Core/Src/animation.c:95:6:animation_Init	1

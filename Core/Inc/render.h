@@ -19,6 +19,9 @@ void render_DisplayScreen( game* game);
 void render_DisplayKarma( game* game);
 void render_DisplayWriteText(char* str);
 
-void render_init();
+void render_Start();
+void render_End();
+
+void render_Init();
 
 #endif /* SRC_RENDER_H_ */

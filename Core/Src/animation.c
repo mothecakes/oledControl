@@ -49,7 +49,7 @@ bool animation_Play(animation* self) {
     // ie if frame1 is key0 and frame2 is key3
     // from current_frame from 0->2, frame1 should be displayed
     int frameToDisplay = 0;
-    int arrLength = sizeof(self->frames)/sizeof(self->frames[0]);
+    int arrLength = self->length;
     for (int i = 0; i < arrLength; i++) {
         if (self->current_frame == 0)
             break;
@@ -71,13 +71,21 @@ bool animation_Play(animation* self) {
         return true;
 }
 
-// initializes all frames and animations in an animation array. subject to change
+// initializes an animation and its SpriteFrames
+// TODO: make this a proper loading function. add key frame array unless you want to make a function for every thing
 void animation_LoadMedia(animation* self, SpriteFrame* frames) {
     SpriteFrame_Init(frames,sprites_arr[smiley],0,50,50,10,10);
     SpriteFrame_Init(frames + 1,sprites_arr[smiley],1,52,50,10,10);
     SpriteFrame_Init(frames + 2,sprites_arr[smiley],2,54,50,10,10);
     SpriteFrame_Init(frames + 3,sprites_arr[smiley],3,56,50,10,10);
     SpriteFrame_Init(frames + 4,sprites_arr[smiley],4,58,50,10,10);
+    /*
+    SpriteFrame_Init(frames,sprites_arr[spriteCute],0,0,0,128,64);
+    SpriteFrame_Init(frames + 1,sprites_arr[spriteHappy],1,0,0,128,64);
+    SpriteFrame_Init(&frames[2],sprites_arr[spriteUnhappy],2,0,0,128,64);
+    SpriteFrame_Init(&frames[3],sprites_arr[spriteSerious],3,0,0,128,64);
+    SpriteFrame_Init(&frames[4],sprites_arr[smiley],4,0,0,128,64);
+    */
     animation_Init(self, frames,5);
 }
 

@@ -107,11 +107,20 @@ int main(void)
   input Input;
   input_init(&Input);
 
-  animation smiley;
+  animation smileyAni;
   SpriteFrame smileyFrames[5];
+  Sprite* spritesArr[] = {sprites_arr[smiley],sprites_arr[smiley],
+		  sprites_arr[smiley],sprites_arr[smiley],sprites_arr[smiley]};
+	int keys[] = {0,1,2,3,4};
+	int x[] = {50, 52, 54, 55, 52};
+	int y[] = {50, 50, 50, 50, 50};
+	int w[] = {10, 10, 10, 10, 10};
+	int h[] = {10, 10, 10, 10, 10};
 
-  animation_LoadMedia(&smiley, smileyFrames);
-
+  //animation_LoadMedia(&smiley, smileyFrames);
+  SpriteFrame_SetInit(smileyFrames, 5, spritesArr, keys,
+		x, y, w, h);
+  animation_Init(&smileyAni, smileyFrames, 5);
   int ani_flag = 0;
   /* USER CODE END 2 */
 

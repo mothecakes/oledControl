@@ -109,13 +109,15 @@ int main(void)
 
   animation smileyAni;
   SpriteFrame smileyFrames[5];
-  Sprite* spritesArr[] = {sprites_arr[smiley],sprites_arr[smiley],
-		  sprites_arr[smiley],sprites_arr[smiley],sprites_arr[smiley]};
-	int keys[] = {0,1,2,3,4};
-	int x[] = {50, 52, 54, 55, 52};
-	int y[] = {50, 50, 50, 50, 50};
-	int w[] = {10, 10, 10, 10, 10};
-	int h[] = {10, 10, 10, 10, 10};
+  Sprite* spritesArr[] = {
+          sprites_arr[smiley],sprites_arr[smiley],
+		  sprites_arr[smiley],sprites_arr[smiley],sprites_arr[smiley]
+  };
+  int keys[] = {0,1,2,3,4};
+  int x[] = {50, 52, 54, 55, 52};
+  int y[] = {50, 50, 50, 50, 50};
+  int w[] = {10, 10, 10, 10, 10};
+  int h[] = {10, 10, 10, 10, 10};
 
   //animation_LoadMedia(&smiley, smileyFrames);
   SpriteFrame_SetInit(smileyFrames, 5, spritesArr, keys,
@@ -138,7 +140,7 @@ int main(void)
           ani_flag = 1;
       }
       if (ani_flag) {
-          ani_flag = smiley.animation_Play(&smiley);
+          ani_flag = smileyAni.animation_Play(&smileyAni);
       }
       render_DisplayScreen(&Game);
       render_End();

@@ -6,7 +6,9 @@
  */
 #include "sprites.h"
 
-void SpriteFrame_Init(SpriteFrame* self, Sprite* p_sprite, KeyframeIndex p_key, int p_x, int p_y, int p_w, int p_h) {
+void SpriteFrame_Init(SpriteFrame* self, Sprite* p_sprite, KeyframeIndex p_key,
+        int p_x, int p_y, int p_w, int p_h) {
+
     self->sprite = p_sprite;
     self->key = p_key;
 
@@ -17,8 +19,10 @@ void SpriteFrame_Init(SpriteFrame* self, Sprite* p_sprite, KeyframeIndex p_key, 
 }
 
 // pass in a array of sprites, keys, x, y, w, h vals and length to get a working full set of spriteFrames
-void SpriteFrame_SetInit(SpriteFrame* sfArray, int len, Sprite* sprites, int* keysArr,
+void SpriteFrame_SetInit(SpriteFrame sfArray[], int len,
+        Sprite* sprites[], int* keysArr,
 		int* xArr, int* yArr, int* wArr, int* hArr) {
+
 	for (int i = 0; i < len; i++) {
 		SpriteFrame_Init(&sfArray[i], sprites[i], keysArr[i], xArr[i], yArr[i], wArr[i], hArr[i]);
 	}

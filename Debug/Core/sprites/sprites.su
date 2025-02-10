@@ -1,2 +1,2 @@
 ../Core/sprites/sprites.c:9:6:SpriteFrame_Init	24	static
-../Core/sprites/sprites.c:20:6:SpriteFrame_SetInit	64	static
+../Core/sprites/sprites.c:22:6:SpriteFrame_SetInit	72	static

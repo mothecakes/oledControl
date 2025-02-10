@@ -24,7 +24,7 @@ void SpriteFrame_SetInit(SpriteFrame sfArray[], int len,
 		int* xArr, int* yArr, int* wArr, int* hArr) {
 
 	for (int i = 0; i < len; i++) {
-		SpriteFrame_Init(&sfArray[i], sprites[i], keysArr[i], xArr[i], yArr[i], wArr[i], hArr[i]);
+		SpriteFrame_Init(sfArray + i, sprites[i], keysArr[i], xArr[i], yArr[i], wArr[i], hArr[i]);
 	}
 }
 

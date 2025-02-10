@@ -43,7 +43,7 @@ Sprite epd_bitmap_smiley[10 * 10];
 */
 
 void SpriteFrame_Init(SpriteFrame* self, Sprite* p_sprite, KeyframeIndex p_key, int p_x, int p_y, int p_w, int p_h);
-void SpriteFrame_SetInit(SpriteFrame* sfArray, int len, Sprite* sprites, int* keysArr,
+void SpriteFrame_SetInit(SpriteFrame* sfArray, int len, Sprite* sprites[], int* keysArr,
 		int* xArr, int* yArr, int* wArr, int* hArr);
 
 #endif /*SPRITES_SPRITES_H_*/

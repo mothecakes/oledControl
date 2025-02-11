@@ -29,7 +29,17 @@ typedef struct animation {
 	bool (*animation_Play)(struct animation* self);
 } animation;
 
-void animation_LoadMedia(animation* self, SpriteFrame* frames);
+typedef struct animationCfg {
+    SpriteFrame* CfgSpriteFrames;
+    Sprite** CfgSprites;
+    int* CfgKeys;
+    int* CfgX;
+    int* CfgY;
+    int* CfgW;
+    int* CfgH;
+} animationCfg;
+
+void animation_LoadMedia(animation list[]);
 void animation_Init(animation* self, SpriteFrame* p_frames, int p_length);
 
 

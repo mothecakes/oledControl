@@ -73,20 +73,22 @@ bool animation_Play(animation* self) {
 
 // initializes an animation and its SpriteFrames
 // TODO: make this a proper loading function. add key frame array unless you want to make a function for every thing
-void animation_LoadMedia(animation* self, SpriteFrame* frames) {
-    SpriteFrame_Init(frames,sprites_arr[smiley],0,50,50,10,10);
-    SpriteFrame_Init(frames + 1,sprites_arr[smiley],1,52,50,10,10);
-    SpriteFrame_Init(frames + 2,sprites_arr[smiley],2,54,50,10,10);
-    SpriteFrame_Init(frames + 3,sprites_arr[smiley],3,56,50,10,10);
-    SpriteFrame_Init(frames + 4,sprites_arr[smiley],4,58,50,10,10);
-    /*
-    SpriteFrame_Init(frames,sprites_arr[spriteCute],0,0,0,128,64);
-    SpriteFrame_Init(frames + 1,sprites_arr[spriteHappy],1,0,0,128,64);
-    SpriteFrame_Init(&frames[2],sprites_arr[spriteUnhappy],2,0,0,128,64);
-    SpriteFrame_Init(&frames[3],sprites_arr[spriteSerious],3,0,0,128,64);
-    SpriteFrame_Init(&frames[4],sprites_arr[smiley],4,0,0,128,64);
-    */
-    animation_Init(self, frames,5);
+
+void animation_LoadMedia(animation list[]) {
+      SpriteFrame healSF[8];
+      Sprite* healSprites[] = {
+              sprites_arr[heal1],sprites_arr[heal2],
+              sprites_arr[smiley],sprites_arr[heal4],
+              sprites_arr[heal5],sprites_arr[heal6],
+              sprites_arr[heal7],sprites_arr[heal8]
+      };
+      int healKeys[] = {0,1,2,3,4,5,6,7};
+      int healX[] = {0,0,0,0,0,0,0,0};
+      int healY[] = {0,0,0,0,0,0,0,0};
+      int healW[] = {32, 32, 32, 32, 32, 32, 32, 32};
+      int healH[] = {32, 32, 32, 32, 32, 32, 32, 32};
+      SpriteFrame_SetInit(healSF, 8, healSprites, healKeys, healX, healY, healW, healH);
+      animation_Init(list, healSF, 8);
 }
 
 

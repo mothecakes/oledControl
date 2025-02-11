@@ -14,7 +14,15 @@ enum sprite {
     spriteHappy,
     spriteUnhappy,
     spriteSerious,
-    smiley
+    smiley,
+    heal1,
+    heal2,
+    heal3,
+    heal4,
+    heal5,
+    heal6,
+    heal7,
+    heal8
 };
 
 typedef const unsigned char Sprite;

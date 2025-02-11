@@ -107,22 +107,23 @@ int main(void)
   input Input;
   input_init(&Input);
 
-  animation smileyAni;
-  SpriteFrame smileyFrames[5];
-  Sprite* spritesArr[] = {
-          sprites_arr[smiley],sprites_arr[smiley],
-		  sprites_arr[smiley],sprites_arr[smiley],sprites_arr[smiley]
+  SpriteFrame healSF[8];
+  Sprite* healSprites[] = {
+          sprites_arr[heal1],sprites_arr[heal2],
+          sprites_arr[heal3],sprites_arr[heal4],
+          sprites_arr[heal5],sprites_arr[heal6],
+          sprites_arr[heal7],sprites_arr[heal8]
   };
-  int keys[] = {0,1,2,3,4};
-  int x[] = {50, 52, 54, 55, 52};
-  int y[] = {50, 50, 50, 50, 50};
-  int w[] = {10, 10, 10, 10, 10};
-  int h[] = {10, 10, 10, 10, 10};
+  int healKeys[] = {0,1,2,3,4,5,6,7};
+  int healX[] = {0,0,0,0,0,0,0,0};
+  int healY[] = {0,0,0,0,0,0,0,0};
+  int healW[] = {32, 32, 32, 32, 32, 32, 32, 32};
+  int healH[] = {32, 32, 32, 32, 32, 32, 32, 32};
 
+  animation anime;
+  SpriteFrame_SetInit(healSF, 8, healSprites, healKeys, healX, healY, healW, healH);
+  animation_Init(&anime, healSF, 8);
   //animation_LoadMedia(&smiley, smileyFrames);
-  SpriteFrame_SetInit(smileyFrames, 5, spritesArr, keys,
-		x, y, w, h);
-  animation_Init(&smileyAni, smileyFrames, 5);
   int ani_flag = 0;
   /* USER CODE END 2 */
 
@@ -140,7 +141,7 @@ int main(void)
           ani_flag = 1;
       }
       if (ani_flag) {
-          ani_flag = smileyAni.animation_Play(&smileyAni);
+          ani_flag = anime.animation_Play(&anime);
       }
       render_DisplayScreen(&Game);
       render_End();
